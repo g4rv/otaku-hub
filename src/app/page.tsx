@@ -36,7 +36,7 @@ export default async function Home() {
     const data = await res.json() 
 
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between p-24">
+		<main className="">
             {data.data.Page.media.length}
 			{data.data.Page.media.map((item: any) => (
                 <Fragment key={item.title.romaji}>
